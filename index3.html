@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<script>
+    let arrs= [1,4,2,5,3,1231,141,1511,123123,14,1];
+    let max= arrs[0]
+    let totaltb=0;
+    for (let i = 0; i < arrs.length; i++) {
+        if (arrs[i]>max){
+            max = arrs[i];
+            totaltb +=arrs[i]/arrs.length;
+        }
+    } document.write("max =" + max + "trung bình tổng mảng = " + totaltb)
+</script>
+</body>
+</html>
