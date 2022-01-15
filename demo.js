@@ -1,9 +1,14 @@
 
-let arrs= [1,2,3,4,5,6,7,8,9,10,11,12,13];
-for (let i = 0; i < arrs.length/2; i++) {
-    let bot = arrs[i]
-    arrs[i] = arrs[arrs.length-i-1]
-    arrs[arrs.length-i-1]=bot
-
+let interG=[1,2,3,4,5,6,7,8,9,10];
+let inputV= +prompt("Enter A Number:");
+let bot=0;
+for (let i = 0; i < interG.length; i++) {
+    if (inputV==interG[i]){
+        bot = i;
+        break;
+    }
 }
-console.log(arrs);
+ if (inputV==interG[bot]){
+        alert("V is in the array")
+ } else
+        alert("V is not in the array");
